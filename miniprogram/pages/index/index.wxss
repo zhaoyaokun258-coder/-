@@ -1,0 +1,133 @@
+page {
+  background: #f4f7f4;
+  color: #193326;
+  font-size: 28rpx;
+}
+
+.page {
+  padding: 28rpx;
+}
+
+.header {
+  padding: 28rpx 8rpx;
+}
+
+.title {
+  font-size: 44rpx;
+  font-weight: bold;
+}
+
+.subtitle {
+  color: #718276;
+  margin-top: 10rpx;
+}
+
+.demo-tag {
+  margin-top: 18rpx;
+  color: #8a5b13;
+  font-size: 23rpx;
+}
+
+.card {
+  background: #ffffff;
+  padding: 28rpx;
+  border-radius: 22rpx;
+  margin-bottom: 24rpx;
+}
+
+.row,
+.item,
+.progress-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.label,
+.muted {
+  color: #7a887f;
+  font-size: 24rpx;
+}
+
+.status {
+  color: #28734b;
+  font-size: 24rpx;
+}
+
+.task-name {
+  font-size: 34rpx;
+  font-weight: bold;
+  margin: 22rpx 0 12rpx;
+}
+
+.progress-row {
+  margin-top: 32rpx;
+}
+
+.percent {
+  color: #28734b;
+  font-size: 38rpx;
+  font-weight: bold;
+}
+
+.progress-bg {
+  height: 16rpx;
+  background: #e6eee8;
+  border-radius: 20rpx;
+  overflow: hidden;
+  margin-top: 16rpx;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #32845a;
+  border-radius: 20rpx;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 34rpx;
+}
+
+.stat {
+  text-align: center;
+  flex: 1;
+}
+
+.number {
+  font-size: 32rpx;
+  font-weight: bold;
+  margin-bottom: 12rpx;
+}
+
+.section-title {
+  font-size: 30rpx;
+  font-weight: bold;
+  margin-bottom: 20rpx;
+}
+
+.map {
+  width: 100%;
+  height: 360rpx;
+  margin: 20rpx 0;
+  border-radius: 12rpx;
+}
+
+.item {
+  padding: 18rpx 0;
+  border-bottom: 1rpx solid #edf0ed;
+}
+
+.refresh-btn {
+  background: #215c3d;
+  color: white;
+  border-radius: 14rpx;
+}
+
+.footer {
+  text-align: center;
+  color: #7a887f;
+  font-size: 22rpx;
+  padding: 20rpx 8rpx 36rpx;
+}
