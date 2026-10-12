@@ -1,1 +1,12 @@
-
+{
+  "pages": [
+    "pages/index/index"
+  ],
+  "window": {
+    "navigationBarTitleText": "农飞管家",
+    "navigationBarBackgroundColor": "#123D2A",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#F4F7F4"
+  },
+  "style": "v2"
+}
