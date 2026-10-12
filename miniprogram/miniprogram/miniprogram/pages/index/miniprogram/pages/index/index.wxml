@@ -1,0 +1,76 @@
+<view class="page">
+  <view class="header">
+    <view class="title">农飞管家</view>
+    <view class="subtitle">农业无人机作业监控</view>
+    <view class="demo-tag">演示模式 · 非真实设备数据</view>
+  </view>
+
+  <view class="card">
+    <view class="row">
+      <text class="label">当前作业</text>
+      <text class="status">{{status}}</text>
+    </view>
+    <view class="task-name">{{taskName}}</view>
+    <view class="muted">任务编号：{{taskId}}</view>
+
+    <view class="progress-row">
+      <text>任务完成度</text>
+      <text class="percent">{{progress}}%</text>
+    </view>
+    <view class="progress-bg">
+      <view class="progress-fill" style="width: {{progress}}%"></view>
+    </view>
+
+    <view class="stats">
+      <view class="stat">
+        <view class="number">{{sprayedArea}}</view>
+        <view class="muted">已作业（亩）</view>
+      </view>
+      <view class="stat">
+        <view class="number">{{totalArea}}</view>
+        <view class="muted">计划面积（亩）</view>
+      </view>
+      <view class="stat">
+        <view class="number">{{battery}}%</view>
+        <view class="muted">模拟电量</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="card">
+    <view class="section-title">无人机位置</view>
+    <view class="muted">地图位置为演示坐标，不是实际飞行位置</view>
+    <map
+      class="map"
+      latitude="{{latitude}}"
+      longitude="{{longitude}}"
+      scale="15"
+      markers="{{markers}}"
+      show-location="{{false}}"
+    ></map>
+    <view class="muted">最后刷新：{{lastUpdate}}</view>
+  </view>
+
+  <view class="card">
+    <view class="section-title">设备状态</view>
+    <view class="item">
+      <text>设备连接</text>
+      <text>{{connection}}</text>
+    </view>
+    <view class="item">
+      <text>喷洒状态</text>
+      <text>{{sprayStatus}}</text>
+    </view>
+    <view class="item">
+      <text>数据来源</text>
+      <text>本地模拟</text>
+    </view>
+  </view>
+
+  <button class="refresh-btn" bindtap="refreshDemo">
+    刷新演示页面
+  </button>
+  <view class="footer">
+    接入真实设备前，请勿将本页面用于实际飞行决策。
+  </view>
+</view>
